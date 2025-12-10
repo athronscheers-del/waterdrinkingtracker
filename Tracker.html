@@ -5,7 +5,8 @@
     <title>Water Tracker</title>
     <link rel="stylesheet" href="water.css">
 </head>
-<body>
+ <body class="tracker-bg">
+
 
 <header class="navbar">
     <h2 class="logo">SmartHydrate</h2>
@@ -18,101 +19,75 @@
 <section class="tracker-container">
 
     <h2>Water Intake Tracker</h2>
+
+    <!-- Recommended Water Intake Table -->
     <div class="recommend-table">
+        <h3>Recommended Daily Water Intake</h3>
 
-    <h3>Recommended Daily Water Intake</h3>
+        <table>
+            <tr>
+                <th>Age Group</th>
+                <th>Cups/Day</th>
+                <th>Glasses/Day (250ml)</th>
+                <th>Bottles (500ml)</th>
+            </tr>
 
-    <table>
-        <tr>
-            <th>Age Group</th>
-            <th>Cups/Day</th>
-            <th>Glasses/Day (250ml)</th>
-            <th>Bottles (500ml)</th>
-        </tr>
-
-        <tr>
-            <td>1–3 years</td>
-            <td>5–6 cups</td>
-            <td>5–6 glasses</td>
-            <td>2.5–3 bottles</td>
-        </tr>
-
-        <tr>
-            <td>4–8 years</td>
-            <td>7–8 cups</td>
-            <td>7–8 glasses</td>
-            <td>3.5–4 bottles</td>
-        </tr>
-
-        <tr>
-            <td>9–13 years</td>
-            <td>9–10 cups</td>
-            <td>9–10 glasses</td>
-            <td>4.5–5 bottles</td>
-        </tr>
-
-        <tr>
-            <td>14–18 (boys)</td>
-            <td>13–14 cups</td>
-            <td>13–14 glasses</td>
-            <td>6.5–7 bottles</td>
-        </tr>
-
-        <tr>
-            <td>14–18 (girls)</td>
-            <td>10–11 cups</td>
-            <td>10–11 glasses</td>
-            <td>5–5.5 bottles</td>
-        </tr>
-
-        <tr>
-            <td>Adult men</td>
-            <td>13–16 cups</td>
-            <td>13–16 glasses</td>
-            <td>6.5–8 bottles</td>
-        </tr>
-
-        <tr>
-            <td>Adult women</td>
-            <td>9–13 cups</td>
-            <td>9–13 glasses</td>
-            <td>4.5–6.5 bottles</td>
-        </tr>
-
-        <tr>
-            <td>Seniors</td>
-            <td>8–11 cups</td>
-            <td>8–11 glasses</td>
-            <td>4–5.5 bottles</td>
-        </tr>
-        
-    </table>
-</div>
-
-
-    <div class="input-section">
-        <label>Age:</label>
-        <input type="text" placeholder="Enter your age">
-
-        <label>Weight:</label>
-        <input type="text" placeholder="Enter your weight">
+            <tr><td>1–3 years</td><td>5–6 cups</td><td>5–6 glasses</td><td>2.5–3 bottles</td></tr>
+            <tr><td>4–8 years</td><td>7–8 cups</td><td>7–8 glasses</td><td>3.5–4 bottles</td></tr>
+            <tr><td>9–13 years</td><td>9–10 cups</td><td>9–10 glasses</td><td>4.5–5 bottles</td></tr>
+            <tr><td>14–18 (boys)</td><td>13–14 cups</td><td>13–14 glasses</td><td>6.5–7 bottles</td></tr>
+            <tr><td>14–18 (girls)</td><td>10–11 cups</td><td>10–11 glasses</td><td>5–5.5 bottles</td></tr>
+            <tr><td>Adult men</td><td>13–16 cups</td><td>13–16 glasses</td><td>6.5–8 bottles</td></tr>
+            <tr><td>Adult women</td><td>9–13 cups</td><td>9–13 glasses</td><td>4.5–6.5 bottles</td></tr>
+            <tr><td>Seniors</td><td>8–11 cups</td><td>8–11 glasses</td><td>4–5.5 bottles</td></tr>
+        </table>
     </div>
 
+    <div class="input-section">
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" maxlength="20">
+        <label>Age:</label>
+        <select>
+            <option value="">Select Age</option>
+        </select>
+    </div>
     <h3>Select Drink Amount</h3>
 
     <div class="bottle-section">
-        <div class="bottle">250 ml</div>
-        <div class="bottle">500 ml</div>
-        <div class="bottle">600 ml</div>
-        <div class="bottle">1 L</div>
-        <div class="bottle">2 L</div>
+
+        <label class="bottle">
+            <input type="radio" name="drink" value="250">
+            <span>250 ml</span>
+        </label>
+
+        <label class="bottle">
+            <input type="radio" name="drink" value="500">
+            <span>500 ml</span>
+        </label>
+
+        <label class="bottle">
+            <input type="radio" name="drink" value="600">
+            <span>600 ml</span>
+        </label>
+
+        <label class="bottle">
+            <input type="radio" name="drink" value="1000">
+            <span>1 L</span>
+        </label>
+
+        <label class="bottle">
+            <input type="radio" name="drink" value="2000">
+            <span>2 L</span>
+        </label>
+
     </div>
 
     <div class="summary-box">
-        <p><strong>Recommended Daily Intake:</strong> 2.6 L (Men 19+)</p>
-        <p><strong>Your Intake Today:</strong> 0 ml</p>
-        <p><strong>Water Remaining:</strong> 0 ml</p>
+        <p style="color: darkblue; font-weight: bold;">
+    Averagely 2L of water is Recommended per day.🫗
+</p>
     </div>
+
 </section>
 </body>
 </html>
