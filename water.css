@@ -1,4 +1,101 @@
-/* GENERAL PAGE STYLE */
+
+.hero-home {
+    position: relative;
+    height: 85vh;
+    border-radius: 20px;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    max-width: 40%;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    background: #ff8b3d;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/* Section Under Hero */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.info-card {
+    width: 40%;
+    background: #93a9be;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.liters {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.hydrated-tag {
+    background: #ffd281;
+    color: #222;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.info-text {
+    width: 50%;
+}
+
+.info-text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #ff8b3d;
+    font-weight: bold;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -76,7 +173,6 @@ body.tracker-page {
     border: 1px solid #ccc;
 }
 
-/* BOTTLE OPTIONS */
 .bottle-section {
     display: flex;
     gap: 15px;
@@ -93,7 +189,6 @@ body.tracker-page {
     font-weight: bold;
 }
 
-/* SUMMARY BOX */
 .summary-box {
     margin-top: 20px;
     background: #f2f2f2;
@@ -129,4 +224,7 @@ body.tracker-page {
 
 .recommend-table tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+body.tracker-bg {
+    background-color: #d9ecff; /* soft baby blue */
 }
