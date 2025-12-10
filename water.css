@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #444;
+}
+
+.logo {
+    color: #2d7df4;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    background-image: url("https://www.health.com/thmb/poYFmNUE8qp5_lHC8OAte2cDr2s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-GettyImages-1351868843-4dc223f8ccfb42bda0783c601c7e0a01.jpg");
+    background-size: cover;
+    background-position: center;    
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.hero-img img {
+    width: 380px;
+    height: auto;
+    border-radius: 15px;
+}
+.intake-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.intake-box, .info-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 48%;
+    border: 1px solid #e3e3e3;
+}
+
+.intake-box .amount {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #ff7b32;
+}
+
+.status {
+    background-color: #e8ffe8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.info-box p {
+    line-height: 1.6;
+}
+
+/* -----------------------------------------------------------
+                     TRACKER PAGE STYLES
+   ----------------------------------------------------------- */
+
+.tracker-container {
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.input-section input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Bottle sizes */
+.bottle-section {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.bottle {
+    background: #e6f3ff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #aed4ff;
+    text-align: center;
+    width: 80px;
+    font-weight: bold;
+}
+
+/* Summary box */
+.summary-box {
+    margin-top: 20px;
+    background: #f2f2f2;
+    padding: 15px;
+    border-radius: 10px;
+}
+/* Water Intake Table */
+.recommend-table {
+    margin-top: 30px;
+}
+
+.recommend-table h3 {
+    margin-bottom: 15px;
+}
+
+.recommend-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.recommend-table th, 
+.recommend-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.recommend-table th {
+    background-color: #2d7df4;
+    color: white;
+    font-weight: bold;
+}
+
+.recommend-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
