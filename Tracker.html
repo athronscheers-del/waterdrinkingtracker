@@ -5,14 +5,15 @@
     <title>Water Tracker</title>
     <link rel="stylesheet" href="water.css">
 </head>
- <body class="tracker-bg">
+<body class="tracker-bg">
 
 
 <header class="navbar">
     <h2 class="logo">SmartHydrate</h2>
     <nav>
         <a href="water.html">Home</a>
-        <a href="tracker.html">Tracker</a>
+        
+        <a href="tracker.html" class="active">Tracker</a>
     </nav>
 </header>
 
@@ -20,7 +21,121 @@
 
     <h2>Water Intake Tracker</h2>
 
-    <!-- Recommended Water Intake Table -->
+  
+    <div class="input-section">
+        <label style="color: #4a90e2;">Name:</label>
+        <input type="text" placeholder="Enter your name" maxlength="20" class="medium-input">
+        <label style="color: #4a90e2;">Age:</label>
+        <input type="number" placeholder="Enter your age" min="1" max="120">
+    </div>
+
+
+    <div class="weekly-tracker">
+        <h3 style="color: #0066cc; font-weight: bold;">Weekly Water Intake Tracker</h3>
+        <p style="color: darkblue; font-weight: bold; margin-bottom: 20px;">
+            Average man should drink 8 bottles a day (3L). Click on the bars to mark your water intake! 🫗
+        </p>
+
+        <div class="day-row">
+            <div class="day-label">Monday</div>
+            <div class="water-glasses">
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+            </div>
+        </div>
+
+        <div class="day-row">
+            <div class="day-label">Tuesday</div>
+            <div class="water-glasses">
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+            </div>
+        </div>
+
+        <div class="day-row">
+            <div class="day-label">Wednesday</div>
+            <div class="water-glasses">
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+            </div>
+        </div>
+
+        <div class="day-row">
+            <div class="day-label">Thursday</div>
+            <div class="water-glasses">
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+            </div>
+        </div>
+
+        <div class="day-row">
+            <div class="day-label">Friday</div>
+            <div class="water-glasses">
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+            </div>
+        </div>
+
+        <div class="day-row">
+            <div class="day-label">Saturday</div>
+            <div class="water-glasses">
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+            </div>
+        </div>
+
+        <div class="day-row">
+            <div class="day-label">Sunday</div>
+            <div class="water-glasses">
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+                <div class="glass-checkbox" onclick="this.classList.toggle('checked')"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Moved recommendation table to the bottom -->
     <div class="recommend-table">
         <h3>Recommended Daily Water Intake</h3>
 
@@ -41,51 +156,6 @@
             <tr><td>Adult women</td><td>9–13 cups</td><td>9–13 glasses</td><td>4.5–6.5 bottles</td></tr>
             <tr><td>Seniors</td><td>8–11 cups</td><td>8–11 glasses</td><td>4–5.5 bottles</td></tr>
         </table>
-    </div>
-
-    <div class="input-section">
-        <label>Name:</label>
-        <input type="text" placeholder="Enter your name" maxlength="20">
-        <label>Age:</label>
-        <select>
-            <option value="">Select Age</option>
-        </select>
-    </div>
-    <h3>Select Drink Amount</h3>
-
-    <div class="bottle-section">
-
-        <label class="bottle">
-            <input type="radio" name="drink" value="250">
-            <span>250 ml</span>
-        </label>
-
-        <label class="bottle">
-            <input type="radio" name="drink" value="500">
-            <span>500 ml</span>
-        </label>
-
-        <label class="bottle">
-            <input type="radio" name="drink" value="600">
-            <span>600 ml</span>
-        </label>
-
-        <label class="bottle">
-            <input type="radio" name="drink" value="1000">
-            <span>1 L</span>
-        </label>
-
-        <label class="bottle">
-            <input type="radio" name="drink" value="2000">
-            <span>2 L</span>
-        </label>
-
-    </div>
-
-    <div class="summary-box">
-        <p style="color: darkblue; font-weight: bold;">
-    Averagely 2L of water is Recommended per day.🫗
-</p>
     </div>
 
 </section>
