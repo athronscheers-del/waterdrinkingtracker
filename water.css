@@ -5,7 +5,7 @@ body {
 }
 
 body.tracker-bg {
-  background-image: -webkit-image-set("https://images.pexels.com/photos/7815021/pexels-photo-7815021.jpeg");
+  background-image: -webkit-image-set("https://images.pexels.com/photos/1147124/pexels-photo-1147124.jpeg");
 }
 
 .navbar {
@@ -50,10 +50,11 @@ body.tracker-bg {
   height: 85vh;
   border-radius: 20px;
   margin: 25px;
-  overflow: hidden;
+  overflow: hidden; 
+  background-image: -webkit-image-set("https://images.pexels.com/photos/1147124/pexels-photo-1147124.jpeg");
 }
-
 .hero-bg {
+
   width: 100%;
   height: 100%;
   object-fit: cover;
